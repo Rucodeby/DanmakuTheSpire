@@ -1,0 +1,58 @@
+{
+  "danmaku:Ironclad": {
+    "NAMES": [
+      "Attack Type ~Demon Power~",
+      "Defense Type ~Exhaustive Curse~"
+    ],
+    "TEXT": [
+      "Strike Deck",
+      "Dead Branch"
+    ],
+    "OPTIONS": [
+      "Limit Break",
+      "Corruption"
+    ]
+  },
+  "danmaku:Silent": {
+    "NAMES": [
+      "",
+      ""
+    ],
+    "TEXT": [
+      "",
+      ""
+    ],
+    "OPTIONS": [
+      "",
+      ""
+    ]
+  },
+  "danmaku:Defect": {
+    "NAMES": [
+      "",
+      ""
+    ],
+    "TEXT": [
+      "",
+      ""
+    ],
+    "OPTIONS": [
+      "",
+      ""
+    ]
+  },
+  "danmaku:Watcher": {
+    "NAMES": [
+      "",
+      ""
+    ],
+    "TEXT": [
+      "",
+      ""
+    ],
+    "OPTIONS": [
+      "",
+      ""
+    ]
+  }
+}

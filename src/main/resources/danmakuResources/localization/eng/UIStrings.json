@@ -1,0 +1,39 @@
+{
+  "danmaku:MenuPanel": {
+    "TEXT": [
+      "Danmaku",
+      "For test desc"
+    ]
+  },
+  "danmaku:DifficultButton": {
+    "TEXT": [
+      "Easy",
+      "A difficulty level for getting used to the controls. NL Stepping it up is human basics.",
+      "Normal",
+      "A difficulty level for having fun. NL Having faith is yourself will bring you happiness.",
+      "Hard",
+      "A difficulty level for those who can NL show off a bit. NL Can't stop a fun show in its tracks, right?",
+      "Lunatic",
+      "A difficulty level like always. NL If you don't know what that means, then don't play it."
+    ]
+  },
+  "danmaku:AbstractDungeon": {
+    "TEXT": [
+      "Top Score",
+      "Score",
+      "Lives",
+      "Bombs",
+      "Power",
+      "Graze",
+      "MAX"
+    ]
+  },
+  "danmaku:PauseScreen": {
+    "TEXT": [
+      "Return to game",
+      "Return to title",
+      "Save replay and return to title",
+      "Give up and retry"
+    ]
+  }
+}
