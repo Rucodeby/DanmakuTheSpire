@@ -13,9 +13,6 @@ import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.screens.charSelect.CharacterOption;
-import danmaku.actions.MoveAction;
-import danmaku.bullets.IroncladBullet;
-import danmaku.dungeons.AbstractDungeon;
 import danmaku.patches.CharacterOptionPatch;
 
 

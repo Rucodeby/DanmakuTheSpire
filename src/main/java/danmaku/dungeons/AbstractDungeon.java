@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.UIStrings;
 import danmaku.DanmakuTheSpireMod;
 import danmaku.buttons.DifficultButton;
 import danmaku.characters.AbstractDanmakuChar;
-import danmaku.helpers.DanmakuManager;
+import danmaku.helpers.BulletManager;
 
 import static danmaku.helpers.ImagesStash.bombimg;
 
@@ -34,7 +34,7 @@ public abstract class AbstractDungeon {
     public static DanmakuTheSpireMod.Difficulties difficult;
     private static final InfoPanel infoPanel = new InfoPanel(sX + (58f + 50f) * xScale + gameFrame.getWidth() * frameScale,
             Settings.HEIGHT / 2f);
-    public static DanmakuManager danmakuManager = new DanmakuManager();
+    public static BulletManager danmakuManager = new BulletManager();
 
     public AbstractDungeon(String backimg) {
         background = new Texture(backimg);

@@ -4,7 +4,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import danmaku.DanmakuTheSpireMod;
-import danmaku.actions.MoveAction;
 import danmaku.dungeons.AbstractDungeon;
 
 public abstract class AbstractBullet {

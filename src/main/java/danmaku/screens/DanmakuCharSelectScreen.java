@@ -153,8 +153,6 @@ public class DanmakuCharSelectScreen extends CharacterSelectScreen {
             }
         cancelButton.render(sb);
         confirmButton.render(sb);
-        renderSeedSettings(sb);
-        seedPanel.render(sb);
         boolean anythingSelected = false;
         if (!seedPanel.shown)
             for (CharacterOption o : options) {
@@ -162,8 +160,7 @@ public class DanmakuCharSelectScreen extends CharacterSelectScreen {
                     anythingSelected = true;
                 o.render(sb);
             }
-        if (!seedPanel.shown &&
-                !anythingSelected)
+        if (!seedPanel.shown && !anythingSelected)
             if (!Settings.isMobile) {
                 FontHelper.renderFontCentered(sb, FontHelper.losePowerFont, CHOOSE_CHAR_MSG, Settings.WIDTH / 2.0F, 340.0F * Settings.yScale, Settings.CREAM_COLOR, 1.2F);
             } else {

@@ -24,6 +24,16 @@ public class ChooseShotTypeScreen {
     public static MainMenuScreen.CurScreen SHOT_TYPE;
 
     public void render(SpriteBatch sb) {
+        sb.setColor(1F, 1F, 1F, 0.5F);
+        if (CardCrawlGame.mainMenuScreen.charSelectScreen.bgCharImg != null) {
+            if (Settings.isFourByThree) {
+                sb.draw(CardCrawlGame.mainMenuScreen.charSelectScreen.bgCharImg, (float)Settings.WIDTH / 2.0F - 960.0F, (float)Settings.HEIGHT / 2.0F - 600.0F, 960.0F, 600.0F, 1920.0F, 1200.0F, Settings.yScale, Settings.yScale, 0.0F, 0, 0, 1920, 1200, false, false);
+            } else if (Settings.isLetterbox) {
+                sb.draw(CardCrawlGame.mainMenuScreen.charSelectScreen.bgCharImg, (float)Settings.WIDTH / 2.0F - 960.0F, (float)Settings.HEIGHT / 2.0F - 600.0F, 960.0F, 600.0F, 1920.0F, 1200.0F, Settings.xScale, Settings.xScale, 0.0F, 0, 0, 1920, 1200, false, false);
+            } else {
+                sb.draw(CardCrawlGame.mainMenuScreen.charSelectScreen.bgCharImg, (float)Settings.WIDTH / 2.0F - 960.0F, (float)Settings.HEIGHT / 2.0F - 600.0F, 960.0F, 600.0F, 1920.0F, 1200.0F, Settings.scale, Settings.scale, 0.0F, 0, 0, 1920, 1200, false, false);
+            }
+        }
         firstInfo.render(sb);
         secondInfo.render(sb);
         cancelButton.render(sb);

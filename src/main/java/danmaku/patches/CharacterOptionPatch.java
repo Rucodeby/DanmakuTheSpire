@@ -102,8 +102,6 @@ public class CharacterOptionPatch {
                         } else if (m.getClassName().equals(AbstractPlayer.class.getName()) && m.getMethodName().equals("doCharSelectScreenSelectEffect")) {
                             m.replace("if (" + CardCrawlGame.class.getName() + ".mainMenuScreen.charSelectScreen instanceof " +
                                     DanmakuCharSelectScreen.class.getName() + ") {"
-                                    /*"$_ = (" + AbstractDanmakuChar.class.getName() + ")("
-                                    + DanmakuChar.class.getName() + ".field.get(this)).doCharSelectScreenSelectEffect();" +*/
                                     + ChangeText.class.getName() + ".replaceM(this);" +
                                     "} else {" +
                                     "$_ = $proceed($$);" +
@@ -128,15 +126,6 @@ public class CharacterOptionPatch {
                     @Override
                     public void edit(FieldAccess f) throws CannotCompileException {
                         if (f.isReader() && f.getClassName().equals(AbstractPlayer.class.getName()) && f.getFieldName().equals("chosenClass")) {
-                            /*f.replace(
-                                    "if (" + CardCrawlGame.class.getName() + ".mainMenuScreen.charSelectScreen instanceof " +
-                                            DanmakuCharSelectScreen.class.getName() + ") {" +
-                                            "$_ = (" + AbstractDanmakuChar.class.getName() + ")("
-                                            + DanmakuChar.class.getName() + ".field.get(this)).choosenClass;" +
-                                            "} else {" +
-                                            "$_ = $proceed($$);" +
-                                            "}"
-                            );*/
                             f.replace("$_ = " + ChangeChoosenClass.class.getName() + ".replacing(this, $proceed($$));");
                         }
                     }
