@@ -8,5 +8,7 @@ public interface IEntity {
     float getCY();
     float getWidth();
     float getHeight();
+    float update();
+    float render();
 
 }

@@ -2,17 +2,29 @@ package danmaku.interfaces;
 
 import com.badlogic.gdx.math.Polygon;
 
+import java.util.ArrayList;
+
 public interface ICollidable extends IEntity{
 
-    Polygon getBounds();
-    void setBounds(float[] vertices);
+    Polygon getHitbox();
+    void setHitbox(float[] vertices);
 
-    int getContactFilter();
-    void setContactFilter(int value);
+    CollisionType getContactFilter();
+    void setContactFilter(CollisionType value);
 
-    int getContactCategory();
-    void setContactCategory(int value);
+    ArrayList<CollisionType> getContactCategory();
+    void setContactCategory(CollisionType[] value);
 
     void doCollision(ICollidable other);
+
+    public static enum CollisionType {
+        NONE,
+        PLAYER,
+        ENEMY,
+        BOSS,
+        PLAYER_BULLET,
+        ENEMY_BULLET,
+        RESOURCE
+    }
 
 }

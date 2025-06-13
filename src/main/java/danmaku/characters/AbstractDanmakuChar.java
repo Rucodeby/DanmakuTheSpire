@@ -85,6 +85,11 @@ public abstract class AbstractDanmakuChar{
         if (Gdx.input.isKeyPressed(Input.Keys.Z)) {
             // Attack
         }
+        if (Gdx.input.isKeyPressed(Input.Keys.X)) {
+            // Bomb
+        }
+
+
         hb.update();
     }
 }
